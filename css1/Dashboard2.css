@@ -1,0 +1,445 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+}
+
+
+
+  .leftcolumn { 
+    float: left;
+    width: 60%;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 0;
+  }
+  
+  /* Cột phải */
+  .rightcolumn {
+    float: left;
+    width: 38.4%;
+    padding-left: 5px;
+  }
+  
+  /* Hình ảnh tượng trưng */
+  .fakeimg {
+    background-color: #baa1cc;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Thêm định dạng thẻ cho bài viết */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 5px;
+  }
+  
+  /* Clear float khác sau các cột */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .footer{
+    margin-bottom: 0;
+    margin-top: 5px;
+    text-align: center;
+    color: rgb(176, 198, 238);
+    background-color: rgb(40, 122, 122);
+   
+  }
+
+  #bt1{
+    float: left;
+    background-color: #baa1cc;
+    width: 32.9%;
+    padding: 20px;
+  }
+  
+  #bt2{
+    float: left;
+    background-color: #baa1cc;
+    width: 32.9%;
+    margin-left: 5px;
+    padding: 20px;
+  }
+
+  #bt3{
+    float: left;
+    background-color: #baa1cc;
+    width: 32.9%;
+    margin-left: 5px;
+    padding: 20px;
+  }
+
+  #canvas1{
+    display: block;
+    margin: auto;
+  }
+
+  #canvas2{
+    display: block;
+    margin: auto;
+
+  }
+
+  #canvas3{
+    display: block;
+    margin: auto;
+  }
+
+  #tablelayout{
+    border:5px solid rgb(8, 119, 8);
+    color:rgb(26, 80, 161);
+    width: 100%;
+  }
+
+  #tbControl{
+    /* border:5px solid rgb(8, 119, 8); */
+    color:rgb(26, 80, 161);
+    height: 100%;
+    width: 100%;
+  }
+
+  th{
+    background-color: #baa1cc;
+  }
+
+  td{
+    background-color: #baa1cc;
+  }
+  
+  .trtable{
+    border:2px solid rgb(8, 119, 8);
+
+  }
+  .trtable th h3{
+    padding:22px 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .trtable th h2{
+    padding:24px 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .trtable td h3{
+    padding:22px 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .trtable td h2{
+    padding:24px 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  #tbControl tr th{
+    /* padding: auto; */
+    text-align: center; 
+  }
+
+  .c_area1 td{
+    height: 100px;
+  }
+
+  #tbControl tr td{
+    margin: 0;
+    padding: 0 10px 10px 10px; 
+    
+  }
+  /* table{
+    padding: auto;
+  } */
+  .c_area1{
+    border:2px solid rgb(8, 119, 8);
+    margin: auto;
+    /* padding: auto; */
+    width: 60%;
+    height: 60%;
+  }
+  /* .c_area1:hover{
+    background-color: greenyellow;;
+  } */
+
+  .c_area1 tr >th{
+    font-size: 25px;
+    padding-left: 12px;
+  }
+  .imgstyle{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  #buttonON1, #buttonON2, #buttonON3, #buttonON4, #buttonON5, #buttonON6 {
+    display: inline-table;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 64px;
+    height: 37px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+    }
+    #buttonON1:hover , #buttonON2:hover , #buttonON3:hover , #buttonON4:hover , #buttonON5:hover , #buttonON6:hover {background-color: #3e8e41}
+    #buttonON1:active , #buttonON2:active , #buttonON3:active , #buttonON4:active , #buttonON5:active , #buttonON6:active {
+    background-color: #3e8e41;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+    }
+    
+    #buttonOFF1, #buttonOFF2, #buttonOFF3, #buttonOFF4, #buttonOFF5, #buttonOFF6{
+    display: inline-table;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 64px;
+    height: 37px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+    }
+    #buttonOFF1:hover,  #buttonOFF2:hover, #buttonOFF3:hover, #buttonOFF4:hover, #buttonOFF5:hover, #buttonOFF6:hover {background-color: #c0392b}
+    #buttonOFF1:active, #buttonOFF2:active, #buttonOFF3:active, #buttonOFF4:active, #buttonOFF5:active, #buttonOFF6:active {
+    background-color: #c0392b;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+    }
+
+  .in_line{
+    display: table;
+  }
+
+  #div-left{
+    float: left;
+  }
+  #div-right{
+    margin: 20px 0 10px 325px;
+    float: right;
+  }
+
+  #div-left1{
+    float: left;
+  }
+  #div-right1{
+    margin: 20px 0 10px 95px;
+    float: right;
+  }
+
+
+
+  @media screen and (max-width: 700px) {
+    .leftcolumn, .rightcolumn { 
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Bố cục linh hoạt: Thanh menu điều hướng xếp chồng lên nhau thay vì cạnh nhau
+  khi màn hình có chiều rộng dưới 300px  */
+  @media screen and (max-width: 300px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+.ip1 {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .btn12 {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  } 
+   
+  .btn12:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  .imgcontainer h3{
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+
+  
+  .container {
+    padding: 16px;
+    font-family: sans-serif;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal1-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close1 {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close1:hover,
+  .close1:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  .container2 div { 
+    display: inline-block; 
+    width: 300px; 
+    min-height: 50px; 
+    background-color: #eee; 
+    height: auto; 
+  }
+  .ofset1{
+    text-align: center;
+    margin: 20px 32px;
+    padding-top: 15px;
+  }
+
+  .ofset1 label b{
+    font-size: 25px;
+    color:#333;
+    
+  }
+  .ofset1 input{
+    width: 100px;
+  }
+
+  .ofset1 button{
+    
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px #999;
+  }
+
+  .ofset1 button:hover{
+    background: rgb(12, 201, 12);
+    color: rgb(206, 211, 206);
+  }
+  .ofset1 button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+  }
+
+  .ofset1 button{
+    background: rgb(12, 201, 12);
+    color: rgb(206, 211, 206);
+  }
+
+  .ofset1 h5{
+    color: rgb(12, 201, 12);
+  }
